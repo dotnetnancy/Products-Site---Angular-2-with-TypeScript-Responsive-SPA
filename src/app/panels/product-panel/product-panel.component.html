@@ -1,0 +1,31 @@
+<div *screenLarge class="group">
+  <div class="index">
+    <span>{{ index }}</span>
+  </div>
+  <div>
+    <img class="product-image" [src]="'/assets/' + product.name + '.jpg'" [alt]="product.name">
+  </div>
+  <div class="product-name">
+    <span>{{ product.name }}</span>
+  </div>
+  <div class="price">
+    <span>{{ product.price }}</span>
+  </div>
+</div>
+<div *screenBelowLarge class="group-small">
+  <div class="title-group-small">
+    <div class="index-small">
+      <span>{{ index }}</span>
+    </div>
+    <div class="product-name-small">
+      <span>{{ product.name }}</span>
+    </div>
+  </div>
+  <div>
+    <img class="product-image-small" [src]="'/assets/' + product.name + '.jpg'" [alt]="product.name">
+  </div>
+  
+  <div class="price-small">
+    <span>{{ product.price }}</span>
+  </div>
+</div>

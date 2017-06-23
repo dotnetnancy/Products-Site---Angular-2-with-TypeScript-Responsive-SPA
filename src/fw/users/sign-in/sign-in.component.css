@@ -1,0 +1,29 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.5;
+    background-image: url('../../../assets/mechanics.png');  
+    background-position:  center center;
+    background-size: cover;
+}
+
+.sign-in-form {
+    min-width: 300px;
+    background-color: white;
+   opacity:100;
+    padding: 20px;
+}
+
+a {
+    line-height: 32px;
+}
+button {
+    float: right;
+}
+
+.message {
+    float: right;
+}

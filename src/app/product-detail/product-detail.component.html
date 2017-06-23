@@ -1,0 +1,11 @@
+<h3>Product</h3>
+
+<fw-dynamic-form 
+  [vm]="product" 
+  [vmDefinition]="productDefinition" 
+  [operation]="operation" 
+  [errorMessage]="errorMessage" 
+  (update)="updateProduct($event)" 
+  (create)="createProduct($event)"
+>  
+</fw-dynamic-form>

@@ -1,0 +1,42 @@
+<h3>Product Maintenance</h3>
+<button class="btn btn-primary" (click)="createProduct()">Add New Product</button>
+<table>
+  <thead>
+  <tr>
+    <th style="width: 25px">Id</th>
+    <th style="width: 200px">Product</th>
+    <th style="width: 70px">Price</th>
+    <th style="min-width: 100px"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let row of products">
+    <td>{{ row.id }}</td>
+    <td>{{ row.name }}</td>
+    <td>{{ row.price }}</td>
+    <td *ngIf="row.id != deleteId">
+      <button class="btn btn-sm btn-primary"
+        (click)="showProductDetail(row.id)">
+          Details
+      </button>
+      <button class="btn btn-sm btn-warning"
+        (click)="editProduct(row.id)">
+          Edit
+      </button>
+      <button class="btn btn-sm btn-danger"
+        (click)="deleteProductQuestion(row.id)">
+          Delete
+      </button>
+    </td>
+    <td *ngIf="row.id === deleteId && !isDeleting">
+      Delete this product?
+      <button class="btn btn-sm" (click)="cancelDelete()">Cancel</button>
+      <button class="btn btn-sm btn-danger" (click)="deleteProduct(row.id)">Delete</button>
+      <p *ngIf="deleteError">{{ deleteError }}</p>
+    </td>
+    <td *ngIf="row.id === deleteId && isDeleting">
+      Deleting...
+    </td>
+  </tr>
+  </tbody>
+</table>

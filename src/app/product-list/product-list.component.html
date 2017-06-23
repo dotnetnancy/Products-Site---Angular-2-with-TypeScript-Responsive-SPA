@@ -1,0 +1,6 @@
+
+<fw-panel *ngFor="let product of products; let i=index">
+  <div class="projected-title">Product</div>
+  <app-product-panel [product]="product" [index]="i+1">
+  </app-product-panel>
+</fw-panel>
