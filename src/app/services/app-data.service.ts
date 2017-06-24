@@ -17,7 +17,9 @@ export class AppDataService {
     { id: 7, name: 'Spain', price: 79.09 },
     { id: 8, name: 'Austria', price: 78.32 },
     { id: 9, name: 'Sweden', price: 78.09 },
-    { id: 10, name: 'Norway', price: 78.04 }
+    { id: 10, name: 'Norway', price: 78.04 },
+    { id: 11, name: 'India', price: 65.04 },
+    { id: 12, name: 'USA', price: 65.04 }
   ];
 
   constructor(private userService: UserService) {

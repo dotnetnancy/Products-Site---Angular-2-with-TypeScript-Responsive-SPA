@@ -53,17 +53,17 @@ span {
 }
 
 .menu-item:hover {
-    background-color: #dfd;
+    background-color: #f0ffff;
 }
 
 .menu-item.vertical-menu:hover {
-    background-color: green;
+    background-color: #0074D9;
 }
 
 .router-link-active {
-  background-color: #dfd;
+  background-color: #f0ffff;
 }
 
 .router-link-active.vertical-menu {
-    background-color: green;
+    background-color: #0074D9;
 }

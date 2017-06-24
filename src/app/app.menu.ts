@@ -20,19 +20,19 @@ export let initialMenuItems: Array<MenuItem> = [
                     {
                         text: 'USA',
                         icon: 'glyphicon-flag',
-                        route: '/authenticated/product-detail/USA',
+                        route: '/authenticated/product-detail/12/reload',
                         submenu: null
                     },
                     {
                         text: 'India',
                         icon: 'glyphicon-flag',
-                        route: '/authenticated/product-detail/India',
+                        route: '/authenticated/product-detail/11/reload',
                         submenu: null
                     },
                     {
                         text: 'Switzerland',
                         icon: 'glyphicon-flag',
-                        route: '/authenticated/product-detail/Switzerland',
+                        route: '/authenticated/product-detail/1/reload',
                         submenu: null
                     }
                 ]

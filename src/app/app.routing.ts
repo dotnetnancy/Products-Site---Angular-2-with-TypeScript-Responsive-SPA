@@ -21,6 +21,7 @@ export const appRoutes: Routes = [
           { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
           { path: 'dashboard', component: DashboardComponent },
           { path: 'product-list/:count', component: ProductListComponent },
+          { path: 'product-detail/:id', component: ProductDetailComponent },
           { path: 'product-detail/:id/:operation', component: ProductDetailComponent },
           { path: 'product-maint', component: ProductMaintComponent },
           { path: 'settings', component: SettingsComponent }

@@ -17,7 +17,7 @@ export interface FrameworkConfigSettings {
 @Injectable()
 export class FrameworkConfigService {
   
-  showLanguageSelector = true;
+  showLanguageSelector = false;
   showUserControls = true;
   showStatusBar = true;
   showStatusBarBreakpoint = 0;

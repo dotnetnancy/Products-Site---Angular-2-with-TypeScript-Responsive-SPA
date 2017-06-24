@@ -19,7 +19,7 @@ export class AppComponent {
         { imageFile: 'assets/social-google-bw.png', alt: 'Google +', link: 'http://www.google.com' },
         { imageFile: 'assets/social-twitter-bw.png', alt: 'Twitter', link: 'http://www.twitter.com' }
       ],
-      showLanguageSelector: true,
+      showLanguageSelector: false,
       showUserControls: true,
       showStatusBar: true,
       showStatusBarBreakpoint: 800

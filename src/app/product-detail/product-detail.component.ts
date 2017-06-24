@@ -37,10 +37,12 @@ export class ProductDetailComponent implements OnInit {
   ];
   errorMessage: string;
   operation: string;
+  originalUrl:any;
+
 
   constructor(private route: ActivatedRoute,
               private router: Router, 
-              private dataService: AppDataService) { }
+              private dataService: AppDataService) {}
 
   createProduct(product: Product) {
     product.id = 0;
@@ -52,13 +54,22 @@ export class ProductDetailComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.operation = this.route.snapshot.params['operation'];
-
+    this.operation = this.route.snapshot.params['operation'];  
+           
     if (this.operation === 'create') {
       this.product = { id: 0, name: '', price: null };
-    } else {
+    }
+    //this is a hack to get the reload with the correct id in angular the reload 
+    //does not happen when only the parameter values change
+   else if(this.operation === 'reload'){
       this.dataService.getProduct(this.route.snapshot.params['id'])
         .subscribe((product: Product) => this.product = product);
+        this.router.navigateByUrl('/authenticated/product-detail/' + this.route.snapshot.params['id']);
+   }
+    
+    else {
+        this.dataService.getProduct(this.route.snapshot.params['id'])
+        .subscribe((product: Product) => this.product = product);      
     }
   }
 
@@ -69,5 +80,4 @@ export class ProductDetailComponent implements OnInit {
       err => this.errorMessage = 'Error updating product'
       );
   }
-
 }
