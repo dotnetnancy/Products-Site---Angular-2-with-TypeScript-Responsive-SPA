@@ -59,17 +59,17 @@
 
 .price {
     display: flex;
-    font-size: 44px;
+    font-size: 25px;
     width: 180px;
     color: white;
-    background-color: #0074D9;
+    background-color: #336699;
     align-items: center;
     justify-content: center;
 }
 
 .price-small {
-    font-size: 44px;
+    font-size: 25px;
     color: white;
-    background-color: #0074D9;
+    background-color: #336699;
     text-align: center;
 }

@@ -7,7 +7,7 @@
  *   2. Application imports. Files imported after ZoneJS that should be loaded before your main
  *      file.
  *
- * The current setup is for so-called "ever#0074D9" browsers; the last versions of browsers that
+ * The current setup is for so-called "ever#336699" browsers; the last versions of browsers that
  * automatically update themselves. This includes Safari >= 10, Chrome >= 55 (including Opera),
  * Edge >= 13 on the desktop, and iOS 10 and Chrome on mobile.
  *
@@ -40,7 +40,7 @@
 // import 'web-animations-js';  // Run `npm install --save web-animations-js`.
 
 
-/** Ever#0074D9 browsers require these. **/
+/** Ever#336699 browsers require these. **/
 import 'core-js/es6/reflect';
 import 'core-js/es7/reflect';
 

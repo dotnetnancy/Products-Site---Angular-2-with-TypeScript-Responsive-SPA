@@ -9,7 +9,7 @@
     <span>{{ product.name }}</span>
   </div>
   <div class="price">
-    <span>{{ product.price }}</span>
+    <span>{{ product.price  | currency  }}</span>
   </div>
 </div>
 <div *screenBelowLarge class="group-small">
@@ -26,6 +26,6 @@
   </div>
   
   <div class="price-small">
-    <span>{{ product.price }}</span>
+    <span>{{ product.price  | currency }}</span>
   </div>
 </div>

@@ -9,7 +9,7 @@ export let initialMenuItems: Array<MenuItem> = [
     },
     {
         text: 'Products',
-        icon: 'glyphicon-flag',
+        icon: 'glyphicon-fire',
         route: null,
         submenu: [
             {
@@ -18,40 +18,40 @@ export let initialMenuItems: Array<MenuItem> = [
                 route: null,
                 submenu: [
                     {
-                        text: 'USA',
-                        icon: 'glyphicon-flag',
-                        route: '/authenticated/product-detail/12/reload',
+                        text: 'Free Weights',
+                        icon: 'glyphicon-fire',
+                        route: '/authenticated/product-detail/3/reload',
                         submenu: null
                     },
                     {
-                        text: 'India',
-                        icon: 'glyphicon-flag',
+                        text: 'Barbell',
+                        icon: 'glyphicon-fire',
+                        route: '/authenticated/product-detail/9/reload',
+                        submenu: null
+                    },
+                    {
+                        text: 'Straps',
+                        icon: 'glyphicon-fire',
                         route: '/authenticated/product-detail/11/reload',
-                        submenu: null
-                    },
-                    {
-                        text: 'Switzerland',
-                        icon: 'glyphicon-flag',
-                        route: '/authenticated/product-detail/1/reload',
                         submenu: null
                     }
                 ]
             },
             {
-                text: 'Top 3',
-                icon: 'glyphicon-flag',
+                text: 'Top 3 Items',
+                icon: 'glyphicon-fire',
                 route: '/authenticated/product-list/3',
                 submenu: null
             },
             {
-                text: 'Top 10',
-                icon: 'glyphicon-flag',
+                text: 'Top 10 Items',
+                icon: 'glyphicon-fire',
                 route: '/authenticated/product-list/10',
                 submenu: null
             },
             {
-                text: 'All',
-                icon: 'glyphicon-flag',
+                text: 'All Items',
+                icon: 'glyphicon-fire',
                 route: '/authenticated/product-list/0',
                 submenu: null
             }

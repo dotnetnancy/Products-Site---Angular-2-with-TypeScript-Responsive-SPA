@@ -8,18 +8,17 @@ import { Observable } from 'rxjs/Observable';
 export class AppDataService {
 
   private products : Array<Product> = [
-    { id: 1, name: 'Switzerland',  price: 87.67 },
-    { id: 2, name: 'Luxembourg',   price: 83.29 },
-    { id: 3, name: 'Australia', price: 82.4 },
-    { id: 4, name: 'Singapore', price: 81.78 },
-    { id: 5, name: 'Czech Republic', price: 81.47 },
-    { id: 6, name: 'Germany', price: 80.47 },
-    { id: 7, name: 'Spain', price: 79.09 },
-    { id: 8, name: 'Austria', price: 78.32 },
-    { id: 9, name: 'Sweden', price: 78.09 },
-    { id: 10, name: 'Norway', price: 78.04 },
-    { id: 11, name: 'India', price: 65.04 },
-    { id: 12, name: 'USA', price: 65.04 }
+    { id: 1, name: 'Boxing Gloves',  price: 25.00 },
+    { id: 2, name: 'Eliptical Machine',   price: 2000.00 },
+    { id: 3, name: 'Free Weights', price: 500.00 },
+    { id: 4, name: 'Grep Strengthener', price: 18.99 },
+    { id: 5, name: 'Squash', price: 88.95 },
+    { id: 6, name: 'Yoga', price: 56.75 },
+    { id: 7, name: 'AB Trainer', price: 79.99 },
+    { id: 8, name: 'Fitness Benches', price: 325.00 },
+    { id: 9, name: 'Barbell', price: 150.59 },
+    { id: 10, name: 'Plates', price: 425.25 },
+    { id: 11, name: 'Straps', price: 65.00 },
   ];
 
   constructor(private userService: UserService) {
